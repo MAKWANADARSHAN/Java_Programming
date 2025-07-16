@@ -1,20 +1,24 @@
-package com.prectice;
+package com.numbersystem;
 
 import java.util.Scanner;
 
-public class FactorOrDiviser {
-
+public class CkeckPerfectNo {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter The Number");
 		int num = sc.nextInt();
-//		for (int i = 1; i <= num; i++) 
+		int sum = 0;
 		for (int i = 1; i <= num / 2; i++) {
 			if (num % i == 0) {
+				sum += i;
 				System.out.println(i);
 			}
 
 		}
-		System.out.println(num);
+		if (sum == num) {
+			System.out.println(num + " is perfect number");
+		} else {
+			System.out.println(num + " is not perfect number");
+		}
 	}
 }

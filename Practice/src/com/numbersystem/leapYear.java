@@ -1,4 +1,4 @@
-package com.prectice;
+package com.numbersystem;
 
 import java.util.Scanner;
 

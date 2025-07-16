@@ -1,4 +1,4 @@
-package com.prectice;
+package com.numbersystem;
 
 public class EvenNumber {
 	public static void main(String[] args) {
