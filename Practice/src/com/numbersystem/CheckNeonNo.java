@@ -10,10 +10,8 @@ public class CheckNeonNo {
 			sum += tem;
 			square /= 10;
 		}
-		if (num == sum)
-			return true;
-		else
-			return false;
+
+		return num == sum;
 
 	}
 

@@ -7,9 +7,7 @@ public class checkDate {
 			System.out.println("invalid Date..");
 		} else if ((month == 4 || month == 6 || month == 9 || month == 11) && date > 30) {
 			System.out.println("invalid date..");
-		} else if (!(year % 4 == 0 && year % 100 == 0 || year % 400 == 0) && month == 2 && date > 28)
-
-		{
+		} else if (!(year % 4 == 0 && year % 100 == 0 || year % 400 == 0) && month == 2 && date > 28) {
 			System.out.println("invalid date");
 		} else if ((year % 4 == 0 && year % 100 == 0 || year % 400 == 0) && month == 2 && date > 29) {
 			System.out.println("invalid date");

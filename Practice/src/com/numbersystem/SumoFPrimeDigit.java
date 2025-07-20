@@ -1,6 +1,6 @@
 package com.numbersystem;
 
-public class SumosPrimeDigit {
+public class SumoFPrimeDigit {
 	static int sumOfPrime(int num) {
 		int sum = 0;
 
