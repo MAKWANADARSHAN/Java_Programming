@@ -8,17 +8,17 @@ public class AddTwoArray {
 		for (int i = 0; i < a.length; i++) {
 			c[i] = a[i];
 		}
-		int x = 0;
-		for (int i = a.length; i < a.length + b.length; i++) {
-			c[i] = b[x];
-			x++;
+
+		for (int i = 0; i < b.length; i++) {
+			c[a.length + i] = b[i];
+
 		}
 		return c;
 	}
 
 	public static void main(String[] args) {
 		int[] a = { 10, 20, 30 };
-		int[] b = { 100, 200, 300 };
+		int[] b = { 100, 200, 300, 400 };
 		System.out.println(Arrays.toString(addArray(a, b)));
 	}
 }

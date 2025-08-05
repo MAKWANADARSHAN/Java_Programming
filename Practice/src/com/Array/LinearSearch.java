@@ -1,22 +1,23 @@
 package com.Array;
 
 public class LinearSearch {
-	static boolean linearSearch(int[] a, int n) {
-		for (int i : a) {
-			if (i == n) {
-				return true;
+	static int linearSearch(int[] a, int n) {
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] == n) {
+				return i;
 			}
 		}
-		return false;
+		return -1;
 	}
 
 	public static void main(String[] args) {
 		int a[] = { 10, 20, 30, 40, 50 };
-		int num = 5;
-		if (linearSearch(a, num)) {
-			System.out.println("numner are found");
+		int num = 50;
+		int index = linearSearch(a, num);
+		if (index >= 0) {
+			System.out.println("Number is found in index : " + index);
 		} else {
-			System.out.println("Number are not found");
+			System.out.println("Number is not found...");
 		}
 	}
 }
