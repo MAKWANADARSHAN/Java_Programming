@@ -3,11 +3,11 @@ package com.Array;
 public class FindMostDuplicateNumber {
 
 	public static void main(String[] args) {
-		int a[] = { 10, 20, 10, 30, 20 };
+		int a[] = { 10, 20, 10, 30, 20, 10 };
 		boolean b[] = new boolean[a.length];
 
 		int maxCount = 0;
-		int mostFrequent = a[0];
+		int mostRepited = a[0];
 
 		for (int i = 0; i < a.length; i++) {
 			if (b[i] == false) {
@@ -20,11 +20,11 @@ public class FindMostDuplicateNumber {
 				}
 				if (count > maxCount) {
 					maxCount = count;
-					mostFrequent = a[i];
+					mostRepited = a[i];
 				}
 			}
 		}
 
-		System.out.println(mostFrequent);
+		System.out.println(mostRepited);
 	}
 }
