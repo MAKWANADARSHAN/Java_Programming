@@ -1,25 +1,28 @@
 package com.Array;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 public class PrintNthBiggestValue {
-	static int[] sortDesc(int a[]) {
-		for (int i = 0; i <= a.length - 1; i++) {
-			for (int j = i + 1; j <= a.length - 1; j++) {
-				if (a[i] < a[j]) {
-					int tem = a[i];
-					a[i] = a[j];
-					a[j] = tem;
-				}
-			}
+	static int[] removeDuplicate(int[] a) {
+		HashSet<Integer> hs = new HashSet<Integer>();
+		for (int i : a) {
+			hs.add(i);
 		}
-		return a;
+		int b[] = new int[hs.size()];
+		int index = 0;
+		for (int ele : hs) {
+			b[index] = ele;
+			index++;
+		}
+		Arrays.sort(b);
+		return b;
 	}
 
 	public static void main(String[] args) {
-		int a[] = { 50, 10, 50, 30, 10, 40 };
-		int n = 3;
-		sortDesc(a);
-		for (int i = 0; i < n; i++) {
-			System.out.println(a[i]);
-		}
+		int a[] = { 10, 20, 10, 30, 20, 50, 10 };
+		int[] b = removeDuplicate(a);
+		int n = 1;
+		System.out.println(b[b.length - n]);
 	}
 }
