@@ -5,7 +5,7 @@ public class IsDisariumNo {
 		int num = numumber;
 		int count = 0;
 		while (num > 0) {
-			int rem = num % 10;
+
 			count++;
 			num /= 10;
 		}
