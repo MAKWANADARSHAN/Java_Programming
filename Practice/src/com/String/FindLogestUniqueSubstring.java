@@ -1,35 +1,34 @@
 package com.String;
 
-import java.util.HashSet;
-
 public class FindLogestUniqueSubstring {
-	public static String longestUniqueSubstring(String s) {
-		int n = s.length();
-		int maxLength = 0, start = 0, end = 0;
-		HashSet<Character> set = new HashSet<>();
-		int left = 0, right = 0;
 
-		while (right < n) {
-			char c = s.charAt(right);
-			if (!set.contains(c)) {
-				set.add(c);
-				if ((right - left + 1) > maxLength) {
-					maxLength = right - left + 1;
-					start = left;
-					end = right;
-				}
-				right++;
-			} else {
-				set.remove(s.charAt(left));
-				left++;
+	static boolean isUnique(String s) {
+		s = s.toLowerCase();
+		for (int i = 0; i < s.length(); i++) {
+			for (int j = i + 1; j < s.length(); j++) {
+				if (s.charAt(i) == s.charAt(j))
+					return false;
 			}
 		}
-		return s.substring(start, end + 1);
+		return true;
+
 	}
 
 	public static void main(String[] args) {
-		String input = "abcabcbbghjkl";
-		String result = longestUniqueSubstring(input);
-		System.out.println("Longest unique substring: " + result);
+		String s1 = "scanner";
+		String s2 = "";
+		int length = 0;
+		for (int i = 0; i < s1.length(); i++) {
+			for (int j = i; j <= s1.length(); j++) {
+				String sub = s1.substring(i, j);
+				if (isUnique(sub)) {
+					if (sub.length() > length) {
+						length = sub.length();
+						s2 = sub;
+					}
+				}
+			}
+		}
+		System.out.println(s2);
 	}
 }

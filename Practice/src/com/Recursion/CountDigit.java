@@ -9,7 +9,7 @@ public class CountDigit {
 	}
 
 	public static void main(String[] args) {
-		int num = 123;
+		int num = 1223;
 		System.out.println(count(num));
 	}
 }

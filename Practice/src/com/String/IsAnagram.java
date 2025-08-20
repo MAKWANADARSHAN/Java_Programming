@@ -15,9 +15,18 @@ public class IsAnagram {
 	}
 
 	static boolean isAnagram1(String s1, String s2) {
+		int[] ch = new int[256];
 		if (s1.length() != s2.length()) {
 
 			return false;
+		}
+		for (int i = 0; i < s1.length(); i++) {
+			ch[s1.charAt(i)]++;
+			ch[s2.charAt(i)]--;
+		}
+		for (int c : ch) {
+			if (c != 0)
+				return false;
 		}
 
 		return true;
@@ -25,8 +34,8 @@ public class IsAnagram {
 	}
 
 	public static void main(String[] args) {
-		String s1 = "Cats";
+		String s1 = "Cat";
 		String s2 = "Act";
-		System.out.println(isAnagram1(s1, s2));
+		System.out.println(isAnagram1(s1.toLowerCase(), s2.toLowerCase()));
 	}
 }
