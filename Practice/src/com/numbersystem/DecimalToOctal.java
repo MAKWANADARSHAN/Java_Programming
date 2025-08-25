@@ -2,7 +2,7 @@ package com.numbersystem;
 
 public class DecimalToOctal {
 	public static void main(String[] args) {
-		int dec = 75;
+		int dec = 64;
 		System.out.println(decToOct(dec));
 
 	}

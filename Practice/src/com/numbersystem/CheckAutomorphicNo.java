@@ -12,12 +12,10 @@ public class CheckAutomorphicNo {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		if (isAutomorphic(25)) {
 			System.out.println("yes");
 		} else {
 			System.out.println("no");
 		}
 	}
-
 }

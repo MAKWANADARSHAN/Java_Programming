@@ -6,7 +6,7 @@ public class CheckNumberDigitOdd {
 
 		while (num > 0) {
 			int tem = num % 10;
-			if (tem % 2 == 0) {
+			if (num % 10 % 2 == 0) {
 				return false;
 			} else {
 				num /= 10;
@@ -16,11 +16,11 @@ public class CheckNumberDigitOdd {
 	}
 
 	public static void main(String[] args) {
-		int num = 137;
+		int num = 138;
 		if (oddDigit(num)) {
-			System.out.println("all digit are odd");
+			System.out.println(" digit are odd");
 		} else {
-			System.err.println("all digit are not odd");
+			System.err.println("digit are not odd");
 		}
 	}
 }
