@@ -8,7 +8,7 @@ public class ReverseSentence {
 //		for (int i = s1.length - 1; i >= 0; i--) {
 //			reverse += s1[i] + " ";
 //		}
-//		 System.out.println(reverse);
+//		System.out.println(reverse);
 
 		String main = "", word = "";
 		for (int i = 0; i < s.length(); i++) {

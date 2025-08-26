@@ -14,9 +14,9 @@ public class Pattern45 {
 			for (int k = 1; k <= st; k++) {
 				System.out.print(x + " ");
 				if (k <= st / 2) {
-					x--;
+					--x;
 				} else {
-					x++;
+					++x;
 				}
 			}
 			if (i <= n / 2) {

@@ -17,8 +17,3 @@ public class Pattern26 {
 		}
 	}
 }
-
-/**
- * a abc abcde abcdefg abcdefghi
- * 
- **/

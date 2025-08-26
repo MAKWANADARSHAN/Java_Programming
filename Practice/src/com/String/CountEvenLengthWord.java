@@ -2,7 +2,7 @@ package com.String;
 
 public class CountEvenLengthWord {
 	public static void main(String[] args) {
-		String s = "Ram is Go	d";
+		String s = "Ram is Good";
 //		String[] s1 = s.split(" ");
 //
 //		for (int i = 0; i < s1.length; i++) {

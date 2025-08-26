@@ -12,7 +12,7 @@ public class Pattern44 {
 			}
 			int x = 1;
 			for (int k = 1; k <= st; k++) {
-				if (k < i) {
+				if (k <= st / 2) {
 					System.out.print(x + " ");
 					++x;
 				} else {

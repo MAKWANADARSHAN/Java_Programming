@@ -3,8 +3,8 @@ package com.Array;
 public class NthUniqueNumber {
 	public static void main(String[] args) {
 		int a[] = { 10, 20, 10, 30, 40, 20, 30, 50, 40, 70, 90 };
-		int duplicateNum = 0;
-		int n = 1;
+		int uniqueNum = 0;
+		int n = 2;
 		boolean b[] = new boolean[a.length];
 		for (int i = 0; i <= a.length - 1; i++) {
 			if (b[i] == false) {
@@ -17,9 +17,9 @@ public class NthUniqueNumber {
 				}
 				if (count == 1) {
 					System.out.println(a[i]);
-					duplicateNum++;
+					uniqueNum++;
 				}
-				if (duplicateNum == n)
+				if (uniqueNum == n)
 					break;
 			}
 		}

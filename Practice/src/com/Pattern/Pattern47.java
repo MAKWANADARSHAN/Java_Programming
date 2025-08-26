@@ -10,7 +10,7 @@ public class Pattern47 {
 			for (int j = 1; j <= sp; j++) {
 				System.out.print("  ");
 			}
-			int x = 1;
+			int x = 1; // char x='A'
 			for (int k = 1; k <= st; k++) {
 				System.out.print((char) (x + 64) + " ");
 				if (k < st / 2 + 1) {

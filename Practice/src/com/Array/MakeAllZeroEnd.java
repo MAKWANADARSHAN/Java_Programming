@@ -16,5 +16,4 @@ public class MakeAllZeroEnd {
 		}
 		System.out.println(Arrays.toString(a));
 	}
-
 }
