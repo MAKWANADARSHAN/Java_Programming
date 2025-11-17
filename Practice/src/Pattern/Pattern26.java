@@ -5,13 +5,13 @@ public class Pattern26 {
 		int n = 5;
 
 		for (int i = 1; i <= n; i++) {
-			char x = 'a';
+
 			for (int j = 1; j <= n - i; j++) {
-				System.out.print(" ");
+				System.out.print("  ");
 			}
 			for (int k = 1; k <= 2 * i - 1; k++) {
-				System.out.print(x);
-				x++;
+				System.out.print((char) (k + 96) + " ");
+
 			}
 			System.out.println();
 		}

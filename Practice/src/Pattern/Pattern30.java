@@ -7,9 +7,9 @@ public class Pattern30 {
 			for (int j = 1; j <= n - i; j++) {
 				System.out.print("  ");
 			}
-			char x = 'A';
+			char x = 'A'; // int x=1;
 			for (int k = 1; k <= (i * 2) - 1; k++) {
-				System.out.print(x + " ");
+				System.out.print(x + " "); // (char)(x+64)
 				if (k < i)
 					x++;
 				else
