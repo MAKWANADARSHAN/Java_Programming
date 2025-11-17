@@ -11,11 +11,7 @@ public class CountPalindrome {
 			num /= 10;
 
 		}
-		if (revnum == orinum) {
-			return true;
-		} else {
-			return false;
-		}
+		return revnum == orinum;
 	}
 
 	public static void main(String[] args) {

@@ -25,6 +25,6 @@ public class OccurenceOfEachCharecter {
 		for (int i = 0; i < s1.length(); i++) {
 			hm.put(s1.charAt(i), hm.getOrDefault(s1.charAt(i), 0) + 1);
 		}
-		System.out.println(hm);
+		// System.out.println(hm);
 	}
 }

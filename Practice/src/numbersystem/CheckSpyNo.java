@@ -10,11 +10,7 @@ public class CheckSpyNo {
 			sum += tem;
 			num /= 10;
 		}
-		if (sum == product) {
-			return true;
-		} else {
-			return false;
-		}
+		return sum == product;
 	}
 
 	public static void main(String[] args) {

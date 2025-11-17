@@ -13,8 +13,9 @@ public class DuplicateNumber {
 						b[j] = true;
 					}
 				}
-				if (count > 1)
+				if (count > 1) {
 					System.out.println(a[i]);
+				}
 			}
 		}
 	}

@@ -30,7 +30,7 @@ public class FindNthNumberPrime {
 				count++;
 			}
 			if (n == count) {
-				System.out.println(n + "th prime number is : " + i);
+				System.out.println(n + " th prime number is : " + i);
 				break;
 			}
 			i++;

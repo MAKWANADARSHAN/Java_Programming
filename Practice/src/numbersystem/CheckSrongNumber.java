@@ -10,12 +10,8 @@ public class CheckSrongNumber {
 			factsum += fact;
 			num /= 10;
 		}
-		if (factsum == orgnum) {
-			return true;
-		} else {
-			return false;
-		}
-//		return factsum == orgnum;
+
+		return factsum == orgnum;
 	}
 
 	public static void main(String[] args) {

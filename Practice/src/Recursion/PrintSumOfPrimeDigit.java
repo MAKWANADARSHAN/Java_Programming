@@ -4,8 +4,9 @@ public class PrintSumOfPrimeDigit {
 	static int sumofPrime(int n) {
 		if (n == 0)
 			return 0;
-		if ((n % 10) == 2 || (n % 10) == 3 || (n % 10) == 5 || (n % 10) == 7)
-			return n % 10 + sumofPrime(n / 10);
+		int rem = n % 10;
+		if ((rem) == 2 || (rem) == 3 || (rem) == 5 || (rem) == 7)
+			return rem + sumofPrime(n / 10);
 
 		return sumofPrime(n / 10);
 	}

@@ -1,8 +1,8 @@
 package numbersystem;
 
 public class IsDisariumNo {
-	public static int countNum(int numumber) {
-		int num = numumber;
+	public static int countNum(int number) {
+		int num = number;
 		int count = 0;
 		while (num > 0) {
 
@@ -10,6 +10,7 @@ public class IsDisariumNo {
 			num /= 10;
 		}
 		return count;
+		// return new String("" + number).length();
 	}
 
 	public static int power(int p, int n) {
@@ -29,14 +30,14 @@ public class IsDisariumNo {
 
 			sum += power(num % 10, digit);
 			num /= 10;
-			digit--;
+			// digit--;
 		}
 
 		return sum == org;
 	}
 
 	public static void main(String[] args) {
-		int n = 85;
+		int n = 89;
 		System.out.println(isDisarium(n));
 	}
 

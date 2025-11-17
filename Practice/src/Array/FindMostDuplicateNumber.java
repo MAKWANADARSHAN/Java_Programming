@@ -2,8 +2,27 @@ package Array;
 
 public class FindMostDuplicateNumber {
 
+//	public static void name(int[] a) {
+//		Map<Integer, Integer> map = new HashMap<>();
+//
+//		for (int value : a) {
+//			map.put(value, map.getOrDefault(value, 0) + 1);
+//		}
+//
+//		int max = 0, mostRepeated = a[0];
+//		for (var entry : map.entrySet()) {
+//			if (entry.getValue() > max) {
+//				max = entry.getValue();
+//				mostRepeated = entry.getKey();
+//			}
+//		}
+//
+//		System.out.println(mostRepeated);
+//
+//	}
+
 	public static void main(String[] args) {
-		int a[] = { 10, 20, 10, 30, 20, 10 };
+		int a[] = { 10, 20, 10, 30, 20 };
 		boolean b[] = new boolean[a.length];
 
 		int maxCount = 0;

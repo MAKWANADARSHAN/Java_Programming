@@ -28,4 +28,5 @@ public class MergeArrayInZiczac {
 		System.out.println(Arrays.toString(merge(a, b)));
 
 	}
+
 }

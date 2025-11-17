@@ -1,8 +1,7 @@
 package numbersystem;
 
 public class checkDate {
-	public static void main(String[] args) {
-		int date = 41, month = 10, year = 2012;
+	public static void isValidDate(int date, int month, int year) {
 		if (date < 1 || date > 31 || month > 12 || month < 1 || year < 1) {
 			System.out.println("invalid Date..");
 		} else if ((month == 4 || month == 6 || month == 9 || month == 11) && date > 30) {
@@ -14,5 +13,10 @@ public class checkDate {
 		} else {
 			System.out.println("valid date");
 		}
+	}
+
+	public static void main(String[] args) {
+		int date = 30, month = 11, year = 2012;
+		isValidDate(date, month, year);
 	}
 }

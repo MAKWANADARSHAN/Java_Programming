@@ -12,8 +12,7 @@ public class PrintNthBiggestValue {
 		int b[] = new int[hs.size()];
 		int index = 0;
 		for (int ele : hs) {
-			b[index] = ele;
-			index++;
+			b[index++] = ele;
 		}
 		Arrays.sort(b);
 		return b;

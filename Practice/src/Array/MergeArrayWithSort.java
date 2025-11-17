@@ -3,7 +3,7 @@ package Array;
 import java.util.Arrays;
 
 public class MergeArrayWithSort {
-// both array are already sort
+// both array are already sorted
 	public static void main(String[] args) {
 
 		int[] a = { 1, 2, 3, 4, 5 };

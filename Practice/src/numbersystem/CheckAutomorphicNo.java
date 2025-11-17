@@ -12,7 +12,7 @@ public class CheckAutomorphicNo {
 	}
 
 	public static void main(String[] args) {
-		if (isAutomorphic(25)) {
+		if (isAutomorphic(61)) {
 			System.out.println("yes");
 		} else {
 			System.out.println("no");
