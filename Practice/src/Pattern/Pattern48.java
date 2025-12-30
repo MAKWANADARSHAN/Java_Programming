@@ -1,5 +1,14 @@
 package Pattern;
 
+// * 
+
+// * * 
+// * * * 
+// * * * * 
+// * * * 
+// * * 
+// * 
+
 public class Pattern48 {
 	public static void main(String[] args) {
 		int n = 7;
